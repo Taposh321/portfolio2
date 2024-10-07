@@ -1,0 +1,159 @@
+.nev a{
+    position: relative;
+    font-size: 14px;
+    overflow: hidden;
+}
+.nev a::before{
+content:'' ;
+position: absolute;
+background-color: rgb(49, 48, 48);
+right: -100%;
+bottom: 0;
+width:100%;
+height: 2px;
+transition: all .2s;
+
+}
+.nev a:hover::before {
+    right: 0px;
+}
+.see-more-btn{
+transition: all .5s ;
+}
+.bottomBlur{
+    background:  linear-gradient(to top,#164692 1%,rgba(255, 255, 255, 0) 10%)
+}
+.flexAbleTime{
+    background-image: linear-gradient(rgba(36, 34, 34, 0.33) 2px, transparent 2px), linear-gradient(to right, rgba(36, 34, 34, 0.33) 2px, transparent 2px);
+    background-size: 32px 32px;
+    background-color: #000319;  
+}
+.about{
+    background-color: #164692;
+}
+.overlay{
+    background-color: rgba(136, 130, 130, 0.083);
+    
+   
+}
+
+.location{
+    animation-name: fadeOut;
+    animation-duration: 9s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;
+}
+.item{
+perspective: 900px;
+}
+.item-3d{
+transition: all .3s;
+transform-style: preserve-3d;
+}
+@keyframes fadeOut {
+0%,100%{
+    opacity: 0;
+}
+10%{
+    opacity: 1;
+}
+95%{
+    opacity: 1;
+}
+}
+.item-bar{
+position: relative;
+width: 100%;
+height: 6px;
+background-color: rgb(51, 49, 49);
+border: 2px solid rgba(211, 211, 211, 0.242);
+border-radius:10px;
+}
+
+.item-bar::before{
+content:"";
+position: absolute;
+width: var(--i);
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgb(0, 225, 255);
+
+}
+  .grid-lines3 {
+    --s: 50px;  
+    --t:1px;  
+    background:
+    linear-gradient(to right,#000319  50% ,rgba(87, 73, 73, 0) 100%),   
+    linear-gradient(to bottom,#000319  1% ,rgba(246, 244, 244, 0) 40% ), 
+    linear-gradient(to top,#000319  10% ,#ffffff00 40%), 
+    conic-gradient(from 92deg at var(--t) var(--t),#75626200 25%,#3f71c7 0)
+       0 0/var(--s) var(--s)  ,rgb(9, 21, 55);
+  }
+    .grid-lines2 {
+  
+   
+    --s: 50px;  
+    --t:1px; 
+ 
+    background:
+    linear-gradient(to left, #000319 10%,rgba(246, 244, 244, 0)),     /* url(../../assets/photo/heroPhoto3.png) 95% bottom no-repeat, */
+    linear-gradient(to bottom, #000319 10% ,rgba(246, 244, 244, 0) 40% ), 
+    linear-gradient(to top, #000319 1% ,rgba(246, 244, 244, 0) ), 
+    conic-gradient(from 92deg at var(--t) var(--t),#6d090900 25%,#3f71c7  0)
+       0 0/var(--s) var(--s)  ,rgb(9, 21, 55);
+  }
+
+
+    @keyframes lightFlicker {
+0%,100%{
+     background:
+    linear-gradient(to left, #000319 10%,rgba(246, 244, 244, 0)),     /* url(../../assets/photo/heroPhoto3.png) 95% bottom no-repeat, */
+    linear-gradient(to bottom, #000319 10% ,rgba(246, 244, 244, 0) 40% ), 
+    linear-gradient(to top, #000319 1% ,rgba(246, 244, 244, 0) ), 
+    conic-gradient(from 92deg at var(--t) var(--t),#6d090900 25%,#3f71c7  0)
+       0 0/var(--s) var(--s)  ,rgb(9, 21, 55);}
+50%{
+    background:
+    linear-gradient(to left, #000319 100%,rgba(246, 244, 244, 0)),     /* url(../../assets/photo/heroPhoto3.png) 95% bottom no-repeat, */
+    linear-gradient(to bottom, #000319 10% ,rgba(246, 244, 244, 0) 40% ), 
+    linear-gradient(to top, #000319 1% ,rgba(246, 244, 244, 0) ), 
+    conic-gradient(from 92deg at var(--t) var(--t),#6d090900 25%,#3f71c7  0)
+       0 0/var(--s) var(--s)  ,rgb(9, 21, 55);
+}
+53%{
+ background:
+    linear-gradient(to left, #000319 10%,rgba(246, 244, 244, 0)),     /* url(../../assets/photo/heroPhoto3.png) 95% bottom no-repeat, */
+    linear-gradient(to bottom, #000319 10% ,rgba(246, 244, 244, 0) 40% ), 
+    linear-gradient(to top, #000319 1% ,rgba(246, 244, 244, 0) ), 
+    conic-gradient(from 92deg at var(--t) var(--t),#6d090900 25%,#3f71c7  0)
+       0 0/var(--s) var(--s)  ,rgb(9, 21, 55);
+}
+70%{
+    background:
+    linear-gradient(to left, #000319 100%,rgba(246, 244, 244, 0)),     /* url(../../assets/photo/heroPhoto3.png) 95% bottom no-repeat, */
+    linear-gradient(to bottom, #000319 10% ,rgba(246, 244, 244, 0) 40% ), 
+    linear-gradient(to top, #000319 1% ,rgba(246, 244, 244, 0) ), 
+    conic-gradient(from 92deg at var(--t) var(--t),#6d090900 25%,#3f71c7  0)
+       0 0/var(--s) var(--s)  ,rgb(9, 21, 55);
+}
+  }
+  .gradient-text {
+  background: linear-gradient(90deg, #1a0699, #feb47b); /* Define the gradient */
+  -webkit-background-clip: text; /* Clip background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text color transparent to show the background */
+  background-clip: text;
+}
+.edu-item::before{
+content:'';
+position: absolute;
+left:-10px;
+top: 10px;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+border: 2px solid rgba(93, 90, 90, 0.429);
+background-color: #000319;
+}
+
