@@ -13,7 +13,7 @@ return(<>
      <div className="flex  h-full  text-white font-bold b items-center px-3">
       +1 (203) - 410 - 6674 <br />
         West Haven, Connecticut, USA <br />
-       eftykharrahman@gmail.com
+       taposhbarman420@gmail.com
       </div>
       <div className=" flex flex-col gap-2 w-full px-3 ">
        <div className="text-xl text-white  mr-auto">Email me</div>
